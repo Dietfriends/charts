@@ -68,6 +68,8 @@ helm search dietfriends -l |  sed 1d | while read chart_name chart_version app_v
   helm inspect $chart_name
 done
 
+exit
+
 # inspect all by folder name
 #find "$REPO_PATH" -mindepth 1 -maxdepth 1 -type d | while read chart; do
 #  chart_name="`basename "$chart"`"
