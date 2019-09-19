@@ -17,9 +17,12 @@ git checkout master
 
 # run py script to fetch charts from repos
 #sudo apt-get install python3 -y
+sudo apt-get install python3-pip -y
+sudo apt-get install python3-setuptools -y
+
 mkdir -p "charts"
 mkdir -p "/tmp/sources/"
-python3 -m pip install pyyaml
+python3 -m pip3 install pyyaml
 python3 .circleci/fetch_charts.py
 
 ls -al
