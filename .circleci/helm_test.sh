@@ -11,12 +11,12 @@ REPO_PATH="$WORKING_DIRECTORY/repo"
 echo '>> Prepare...'
 mkdir -p /tmp/helm/bin
 mkdir -p /tmp/helm/publish
-apt update
-apt instll ca-certificates git openssh
+sudo apt update
+sudo apt instll ca-certificates git openssh -y
 git checkout master
 
 # run py script to fetch charts from repos
-apt install python3
+sudo apt install python3 -y
 mkdir -p "charts"
 mkdir -p "/tmp/sources/"
 python3 -m pip install pyyaml
