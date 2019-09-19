@@ -11,12 +11,12 @@ REPO_PATH="$WORKING_DIRECTORY/repo"
 echo '>> Prepare...'
 mkdir -p /tmp/helm/bin
 mkdir -p /tmp/helm/publish
-apk update
-apk add ca-certificates git openssh
+apt update
+apt instll ca-certificates git openssh
 git checkout master
 
 # run py script to fetch charts from repos
-apk add python3
+apt install python3
 mkdir -p "charts"
 mkdir -p "/tmp/sources/"
 python3 -m pip install pyyaml
