@@ -1,6 +1,6 @@
 #!/bin/sh
 set -e
-set -o pipefail
+#set -o pipefail
 
 WORKING_DIRECTORY="$PWD"
 HELM_VERSION=2.8.1
