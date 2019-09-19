@@ -22,7 +22,7 @@ sudo apt-get install python3-setuptools -y
 
 mkdir -p "charts"
 mkdir -p "/tmp/sources/"
-python3 -m pip3 install pyyaml
+pip3 install pyyaml
 python3 .circleci/fetch_charts.py
 
 ls -al
