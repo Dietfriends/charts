@@ -12,7 +12,7 @@ echo '>> Prepare...'
 mkdir -p /tmp/helm/bin
 mkdir -p /tmp/helm/publish
 sudo apt-get update
-sudo apt-get instll ca-certificates git openssh -y
+sudo apt-get install ca-certificates git openssh -y
 git checkout master
 
 # run py script to fetch charts from repos
